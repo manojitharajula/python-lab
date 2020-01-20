@@ -1,0 +1,24 @@
+import random
+num=input("Enter your number")
+A=[1,2,3,4,5,6,7,8,9,0]
+cows=0
+bulls=0
+temp=random.choices(A,k=4)
+print(temp)
+tempstr=''.join(map(str,temp))
+print(tempstr)
+print(num)
+
+if(num==temp):
+    bulls=4
+else:
+    for i in range(0,4):
+        if(num[i]!=temp[i]):
+            print("Checking {} == {}".format(num[i],temp[i]))
+            bulls+=1
+            print("bulls:",bulls)
+        else:
+            cows+=1
+            print("Cows:",cows)
+
+print("You have scored {} bulls and {} cows".format(bulls,cows))
