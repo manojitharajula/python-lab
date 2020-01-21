@@ -1,0 +1,16 @@
+import random
+num=random.sample(range(0,9),4)
+cows=0
+bulls=0
+temp=random.sample(range(0,9),4)
+if(num==temp):
+    bulls=4
+else:
+    for i in range(0,4):
+        if(num[i] in temp):
+            if(num[i]==temp[i]):
+                bulls+=1
+            else:                
+                cows+=1          
+print("My Guess:  {} \nYour num:  {}\nSo, You have scored {} bulls and {} cows".format(''.join(map(str,temp)),''.join(map(str,num)),bulls,cows))         
+           
