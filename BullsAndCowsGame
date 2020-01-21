@@ -12,5 +12,5 @@ else:
                 bulls+=1
             else:                
                 cows+=1          
-print("My Guess:  {} \nYour num:  {}\nSo, You have scored {} bulls and {} cows".format(''.join(map(str,temp)),num,bulls,cows))         
+print("My Rand Num:  {} \nYour Guess:   {}\nSo, You have scored {} bulls and {} cows".format(''.join(map(str,temp)),num,bulls,cows))         
            
